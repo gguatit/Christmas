@@ -1,0 +1,26 @@
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  will-change: background-color;
+}
+
+@media (max-width: 768px) {
+  .circle {
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+  }
+}

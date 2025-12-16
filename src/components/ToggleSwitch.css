@@ -1,0 +1,86 @@
+.toggle-switch {
+  position: relative;
+  height: 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  will-change: background-color;
+}
+
+.toggle-switch:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.toggle-circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ff6b35;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  will-change: transform, background-color;
+}
+
+.toggle-switch-s {
+  width: 70px;
+}
+
+.toggle-switch-m {
+  width: 95px;
+}
+
+.toggle-switch-l {
+  width: 110px;
+}
+
+@media (max-width: 768px) {
+  .toggle-switch {
+    height: 25px;
+    margin: 0 4px;
+  }
+  
+  .toggle-circle {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .toggle-switch-s {
+    width: 60px;
+  }
+  
+  .toggle-switch-m {
+    width: 80px;
+  }
+  
+  .toggle-switch-l {
+    width: 95px;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-switch {
+    height: 20px;
+    margin: 0 3px;
+  }
+  
+  .toggle-circle {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .toggle-switch-s {
+    width: 50px;
+  }
+  
+  .toggle-switch-m {
+    width: 65px;
+  }
+  
+  .toggle-switch-l {
+    width: 80px;
+  }
+}
